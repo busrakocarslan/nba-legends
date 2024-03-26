@@ -1,0 +1,93 @@
+.headerPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  & span{
+    color:#C80F2E;
+  }
+  & h1{
+    color: #1D4289;
+  }
+  & input{
+    width: 75vw; 
+    padding: 1rem;   
+    outline-style: none;
+    height: 1.4rem;
+    border:  3px solid #1D4289;
+    border-radius: 5px;
+
+  }
+
+}
+.CardContainer{
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  gap: 3rem;
+  & .card{
+    /* border: 2px solid blue; */
+    width: 250px;
+    height: 350px;
+    margin-top: 3rem;
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    /* text-transform: uppercase; */
+    padding-bottom: 1rem;
+    background-color:darkgoldenrod;
+    border-radius: 10px;
+    & h3{
+      /* border: 2px solid red; */
+      height: 20px;
+      text-align: center;
+      /* padding: .5rem; */
+      margin: 1rem;
+
+    }
+    & .img-container{
+      overflow: hidden;
+      /* border-bottom: 2px solid #1D4289; */
+
+
+      & img{
+        width: 100%;
+        height: 310px;
+        border-radius: 10px;
+        transition: all .3s ease-in;
+        &:hover{
+          cursor: pointer;
+         transform: scale(0.9);
+        }
+      }
+     
+
+
+      
+    }
+    
+
+  }
+  & .info{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: flex-start;
+    gap:1rem;
+    /* line-height: 2rem; */
+    height: 300px;
+    & li{
+      list-style-type: none;
+      text-align: left;
+      
+    }
+    /* background-color: #1D4289; */
+  }
+  
+
+ 
+
+}
